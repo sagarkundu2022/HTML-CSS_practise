@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .inline nav {
+            border: 2px solid red;
+            text-align: center;
+            height: 300px;
+        }
+
+        .inline nav ul li {
+            display: inline;
+
+            border: 1px solid green;
+            margin: 10px;
+        }
+
+        .inline nav ul {
+            position: relative;
+            top: 40%;
+        }
+        .flex nav{
+            border: 2px solid red;
+        }
+        .flex nav ul {
+            display: flex;
+            list-style-type: none;
+            /* flex-direction: row; */
+            justify-content: space-evenly;
+        }
+        .flex nav ul li {
+            border: 2px solid green;
+        }
+        .container {
+            border: 2px solid brown;
+            display: flex;
+            justify-content: center;
+            height: 500px;
+            position: relative;
+        }
+        .first {
+            border: 2px solid orange;
+            margin: 20px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 10%;
+            height: 8rem;
+        }
+        .second{
+            border: 2px solid yellow;
+            margin: 20px;
+            height: 8rem;
+            width: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 40%;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="inline">
+            <nav>
+                Normal Navbar
+                <ul>
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Career</a></li>
+                    <li><a>Services</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="flex">
+            <nav>
+                Navbar with flexbox
+                <ul>
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Career</a></li>
+                    <li><a>Services</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="first">
+                Hello
+            </div>
+            <div class="second">
+                Hello 2
+            </div>
+        </div>
+        
+    </main>
+
+
+</body>
+
+</html>

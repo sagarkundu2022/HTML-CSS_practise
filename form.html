@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./assets/css/form.css" rel="stylesheet" />
+</head>
+
+<body>
+    <form action="registration.html" method="post">
+        <div>
+            <label>Enter your valid email</label>
+            <input type="text" name="userid" value="info@gamil.com" required />
+        </div>
+        <div>
+            <label>Enter your password</label>
+            <input type="password" name="password"  placeholder="enter valid password" required />
+        </div>
+        <div>
+            <label>Enter your age</label>
+            <input type="number" name="age" min="18" max="32" required />
+        </div>
+        <div>
+            <label>Date of Birth</label>
+            <input type="date" name="dob" required />
+        </div>
+        <div>
+            <label>Enter your phone number</label>
+            <select>
+                <optgroup label="Asia">
+                    <option value="+91">IND</option>
+                    <option value="+975">Bhutan</option>
+                    <option value="977">Nepal</option>
+                </optgroup>
+                <optgroup label="Europe">
+                    <option value="+1">US</option>
+                    <option value="+66">Cg</option>
+                </optgroup>
+            </select>
+            <input type="number" name="phone" required/>
+        </div>
+        <div>
+            <label>Food :</label>
+            <input type="checkbox" name='food' value="continental" />
+            <label>continental</label>
+            <input type="checkbox" name='food' value="Italian" />
+            <label>Italian</label>
+            <input type="checkbox" name="food" value="Indian" />
+            <label>Indian</label>
+            <input type="checkbox" name="food" value="Thani" />
+            <label>Thani</label>
+        </div>
+        <div>
+            <h4>Meal</h4>
+            <label>Breakfast</label>
+            <input type="radio" name="meal" value="breakfast" />
+            <label>Lunch</label>
+            <input type="radio" name="meal" value="lunch" />
+            <label>Dinner</label>
+            <input type="radio" name="meal" value="dinner" />
+        </div>
+        <div>
+            <label>Address</label><br />
+            <textarea name="address" cols="40" rows="10" placeholder="enter your present address" required></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Submit" />
+        </div>
+    </form>
+</body>
+
+</html>

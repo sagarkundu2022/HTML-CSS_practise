@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main {
+            width: 100%;
+        }
+        main section{
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            gap: 10px;
+        }
+        main section div {
+            border: 2px solid black;
+            height: 400px;
+            width: auto;
+        }
+        header{
+            display: grid;
+            grid-template-rows: 1fr;
+            border: 2px solid black;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <p>HEADER</p>
+    </header>
+    <main>
+        <section>
+            <div>sidebar</div>
+            <div>content</div>
+            <div>sidebar</div>
+        </section>
+    </main>
+</body>
+
+</html>

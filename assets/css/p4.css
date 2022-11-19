@@ -1,0 +1,8 @@
+form div {
+    margin: 1.25rem;
+}
+form{
+    border: 2px solid black;
+    display: inline-block;
+    align-items: center;
+}

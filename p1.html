@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="description" content="Practise ul tag">
+    <title>UL tag in HTML</title>
+    <link href="./assets/css/style.css" rel="stylesheet" />
+
+</head>
+
+<body id="body">
+    <div class="welcome">
+        <h1>Page Heading</h1>
+        <p>Hey Hello from 10x</p>
+    </div>
+    <hr />
+    <div>
+        <h2>List</h2>
+        <h3>Things to learn</h3>
+    </div>
+    <ul type="disc">
+        <li>
+            <h2>List 1</h2>
+        </li>
+        <li>
+            <h3>List 2</h3>
+        </li>
+        <li>
+            <ul type="circle">
+                <li>List 3.1</li>
+                <li>List 3.2</li>
+                <li>List 3.3</li>
+            </ul>
+        </li>
+    </ul>
+    <!-- Ordered List -->
+    <h2>Ordered List</h2>
+    <h3>Ranking</h3>
+
+    <ol type="1">
+        <li class='list-item'>Ram</li>
+        <li class='list-item'>Krishna</li>
+        <li class='list-item'>Ramkrishna</li>
+        <li class='list-item'>Ma</li>
+        <li class='list-item'>
+            Bhakta
+
+            <!-- <ul type="circle">
+            <li  class='list-item'>Muni Rishi/Sadhu</li>
+        </ul> -->
+
+            <ol type="i">
+                <li class='list-item'>Muni Rishi/Sadhu</li>
+                <li class='list-item'>
+                    Sangshari Bhakta
+                    <ul type="disc">
+                        <li class='list-item'>
+                            Tagi Bhakta
+                        </li>
+                        <li class='list-item'>
+                            Bhogi Bhakta
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+        </li>
+    </ol>
+
+    <!-- <ol type="a" start="7">
+    <li  class='list-item'></li>
+    <li  class='list-item'></li>
+    <li  class='list-item'></li>
+</ol> -->
+
+    <h2> Defination List </h2>
+    <!--DL is about to create a group of the heading and description as well-->
+
+    <dl>
+        <!--DL-->
+        <dt class="second-dd">HTML</dt>
+        <!--TERM-->
+        <dd>
+            <!--TERM DEFINATION-->
+            HTML is structure language use for web development.
+        </dd>
+        <dt>CSS</dt>
+        <dd class="second-dd">CSS is styling language use for web development.</dd>
+        <dt>JS</dt>
+        <dd>Js is scripting language use for web development.</dd>
+    </dl>
+    <ul type="disc">
+        <li>
+            <h2>List 1</h2>
+        </li>
+        <li>
+            <h3>List 2</h3>
+        </li>
+        <li>
+            <ul type="circle">
+                <li>List 3.1</li>
+                <li>List 3.2</li>
+                <li>List 3.3</li>
+            </ul>
+        </li>
+    </ul>
+    <h2>Link | HyperLink | Anchor Tag</h2>
+    <!-- <a href="https://www.dictionary.com" target="_blank">REDIRECT to dictionary.com</a> -->
+    <!-- we use TARGET attribute to open the hyper link into a new tab -->
+
+    <a href="./assets/components/html/sample.html">REDIRECT to sample document</a>
+    <!-- By browser default Anchor tag, WITHOUT target attribute, which is KILLING the existing page.
+         That means by default it's not creating a new tab.  -->
+
+    <!--./ means same level and ../ means jump to the parent folder-->
+
+    <!--CLASSNAME > TAG NAME-->
+</body>
+
+</html>

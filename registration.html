@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./assets/css/p4.css" rel="stylesheet" />
+</head>
+
+<body>
+    <main>
+        <form action="registration.html" method="post">
+            <div>
+                <label>Email:</label>
+                <input type="text" name="email" placeholder="enter valid email">
+            </div>
+            <div>
+                <label>DOB:</label>
+                <input type="date" name="dob" />
+            </div>
+            <div>
+                <label>Phone:</label>
+                <select>
+                    <option value="+91">Ind</option>
+                    <option value="+977">Bhutan</option>
+                    <option value="+975">Nepal</option>
+                </select>
+                <input type="number" name="phone" placeholder="enter 10 digit phone number" />
+            </div>
+            <div>
+                <label>Gender:</label>
+                <input type="radio" name="gender" value="male" />
+                <label>male</label>
+                <input type="radio" name="gender" value="female" />
+                <label>female</label>
+            </div>
+            <div>
+                <label>Stream:</label>
+                <input type="checkbox" name="stream" value="math" />
+                <label>Math</label>
+                <input type="checkbox" name="stream" value="eco" />
+                <label>Economics</label>
+                <input type="checkbox" name="stream" value="POl Sci" />
+                <label>Political Science</label>
+            </div>
+            <div>
+                <input type="submit" name="submission" value="submit" />
+            </div>
+
+        </form>
+    </main>
+</body>
+
+</html>

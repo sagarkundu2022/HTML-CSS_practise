@@ -1,0 +1,92 @@
+table tr td,
+table tr th {
+    text-align: right !important;
+}
+
+/* IMPORTANT > INLINE > INTERNAL > EXTERNAL*/
+
+/* IF WE WANT TO SELECT EVERY FIRST TABLE DATA(td) */
+
+/* confusion */
+table:first-child tr td:first-child {
+    border: 2px solid red;
+
+}
+
+
+table:first-child tr td:last-child {
+    border: 2px dashed rgb(212, 86, 86);
+}
+table:first-child tr:nth-child(2) {
+    background-color: aqua;
+}
+
+table tr:nth-child(2),
+table tr:nth-child(4) {
+    background-color: yellow;
+}
+
+/* lightblue background to all the odd rows and lightgreen background to all the even rows */
+
+/* table tbody tr:nth-child(1),
+table tr:nth-child(3),
+table tr:nth-child(5) {
+    background-color: lightblue;
+}
+
+table tr:nth-child(2),
+table tr:nth-child(4) {
+    background-color: lightgreen;
+} */
+
+table tbody tr:nth-child(2n+1) {
+    background-color: lightblue;
+}
+table:first-child tr:last-child {
+    background-color: brown;
+}
+.first-div table:nth-child(3){
+    border: 10px solid red;
+}
+
+table tr:nth-child(2n) {
+    background-color: lightgreen;
+}
+
+/* IF WE WANT ADD HELLO IN ROLL NO COLUMN */
+
+table tr td:nth-child(3)::before {
+    content: 'Hello ';
+}
+
+table tr td:nth-child(3)::after {
+    content: ' world';
+}
+
+/* CREATING TABLE WITHOUT TABLE TAG */
+
+/* .table {
+    display: table;
+    border: 2px solid black;
+} */
+
+.row {
+    display: table-row;
+    margin: 20px;
+}
+
+.tbody {
+    display: table-row-group;
+}
+
+.th{
+    font-weight: bold;
+}
+
+.th,
+.td {
+    display: table-cell;
+    border: 1px solid black;
+    margin: 20px;
+    padding: 10px;
+}

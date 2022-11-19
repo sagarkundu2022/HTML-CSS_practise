@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, auto);
+            grid-template-rows: repeat(4, auto);
+        }
+
+        header {
+            display: grid;
+            grid-column: 1/5;
+            grid-row: 1/2;
+            border: 2px solid black;
+            width: 100%;
+        }
+
+
+
+        header section {
+            display: grid;
+            grid-column: 1/2;
+        }
+
+        header nav {
+            display: grid;
+            grid-column: 2/3;
+        }
+
+        header button {
+            display: grid;
+            grid-column: 4/5;
+            width: auto;
+            height: fit-content;
+            position: relative;
+            top: 12px;
+            margin-right: 20px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 40px;
+        }
+
+        main {
+            display: grid;
+            grid-column: 1/5;
+            grid-row: 3/4;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        main aside {
+            display: grid;
+            grid-column: 1/4;
+            grid-row: 1/4;
+            height: 100%;
+        
+        }
+
+        main img {
+            display: grid;
+            grid-column: 4/5;
+        }
+        
+
+        @media screen and (max-width:850px) {
+            main aside {
+                grid-row: 1/2;
+                grid-column: 1/5;
+                background-color: blue;
+            }
+           main img {
+            grid-row: 2/3;
+            grid-column: 1/5;
+            margin-left: auto;
+            margin-right: auto;
+            /* width: 50%; */
+           } 
+        }
+
+        footer {
+            display: grid;
+            grid-column: 1/5;
+            grid-row: 4/5;
+            margin-top: 10px;
+            text-align: center;
+            border: 1px solid black;
+            height: 3rem;
+            position: relative;
+            top: 1.5rem;
+        }
+        .para-last {
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <section>Collab</section>
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+                <button>Get Started</button>
+            </nav>
+        </header>
+        <main>
+            <aside>
+                
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab nihil, laudantium voluptas modi sint
+                    assumenda ducimus rerum itaque porro atque iste ut placeat ad dolore nam? Accusantium quod
+                    architecto
+                    maxime
+                    voluptatum ex! Lorem ipsum dolor sit amet consectetur adipisicing elit. Est aliquid quisquam
+                    recusandae.
+                    Nobis, hic ea. Voluptatum facilis quis, eligendi alias sed reprehenderit aspernatur? Laborum libero
+                    ab
+                    corporis harum necessitatibus dolore quis rem repudiandae officia, atque dolorem. Possimus deserunt
+                    saepe
+                    illo amet! Non dolores culpa numquam, natus iusto quod voluptatibus, repellendus laudantium quaerat
+                    ad
+                    earum
+                    atque incidunt in blanditiis rem recusandae commodi voluptates itaque dolor quis aliquid quos
+                    assumenda
+                    cupiditate maiores? Maiores quod dicta laudantium voluptatem. Earum aperiam itaque eius explicabo
+                    veniam
+                    eveniet. Nulla aperiam, sequi consequatur velit ratione, necessitatibus dolorem perferendis ducimus
+                    vero
+                    labore facilis sed enim, quaerat ipsum ipsam!
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit velit cupiditate reprehenderit sit
+                    voluptatum delectus, hic culpa dolores similique ex explicabo officia, fuga quod. Ducimus dicta illo
+                    animi,
+                    accusamus impedit consequatur nobis iure id minima sed eius sunt, quam, nulla vel soluta deleniti
+                    necessitatibus eveniet similique nam? Et ratione maiores ducimus voluptas dolor autem enim! Laborum
+                    quisquam
+                    necessitatibus nesciunt, dolore placeat temporibus commodi magnam amet, blanditiis voluptatibus
+                    beatae
+                    repudiandae reiciendis. Ratione inventore consequatur reprehenderit qui at commodi perferendis quae
+                    quos
+                    quia hic, fugiat ipsa accusantium alias fuga adipisci labore cupiditate esse consectetur cumque nemo
+                    aliquam
+                    accusamus. Eius amet mollitia nisi!
+                </p>
+
+                <p class="para-last">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab nihil, laudantium voluptas modi sint
+                    assumenda ducimus rerum itaque porro atque iste ut placeat ad dolore nam? Accusantium quod
+                    architecto
+                    maxime
+                    voluptatum ex! Lorem ipsum dolor sit amet consectetur adipisicing elit. Est aliquid quisquam
+                    recusandae.
+                    Nobis, hic ea. Voluptatum facilis quis, eligendi alias sed reprehenderit aspernatur? Laborum libero
+                    ab
+                    corporis harum necessitatibus dolore quis rem repudiandae officia, atque dolorem. Possimus deserunt
+                    saepe
+                    illo amet! Non dolores culpa numquam, natus iusto quod voluptatibus, repellendus laudantium quaerat
+                    ad
+                    earum
+                    atque incidunt in blanditiis rem recusandae commodi voluptates itaque dolor quis aliquid quos
+                    assumenda
+                    cupiditate maiores? Maiores quod dicta laudantium voluptatem. Earum aperiam itaque eius explicabo
+                    veniam
+                    eveniet. Nulla aperiam, sequi consequatur velit ratione, necessitatibus dolorem perferendis ducimus
+                    vero
+                    labore facilis sed enim, quaerat ipsum ipsam!
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit velit cupiditate reprehenderit sit
+                    voluptatum delectus, hic culpa dolores similique ex explicabo officia, fuga quod. Ducimus dicta illo
+                    animi,
+                    accusamus impedit consequatur nobis iure id minima sed eius sunt, quam, nulla vel soluta deleniti
+                    necessitatibus eveniet similique nam? Et ratione maiores ducimus voluptas dolor autem enim! Laborum
+                    quisquam
+                    necessitatibus nesciunt, dolore placeat temporibus commodi magnam amet, blanditiis voluptatibus
+                    beatae
+                    repudiandae reiciendis. Ratione inventore consequatur reprehenderit qui at commodi perferendis quae
+                    quos
+                    quia hic, fugiat ipsa accusantium alias fuga adipisci labore cupiditate esse consectetur cumque nemo
+                    aliquam
+                    accusamus. Eius amet mollitia nisi!
+                </p>
+
+            </aside>
+            <img src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80"
+                alt="laptop photo" />
+        </main>
+        <footer>
+            <article>Designed by Sagar</article>
+        </footer>
+    </div>
+</body>
+
+</html>

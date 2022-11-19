@@ -1,0 +1,72 @@
+/* /* .form{
+    display: table-caption;
+} */
+
+*body{
+    background-color: aqua;
+    text-decoration: underline;
+}
+
+.welcome h1 {
+    color: red;
+}
+
+.welcome p {
+    color: blue;
+}
+#body {
+    color: brown;
+    text-decoration: underline;
+}
+
+/* ID > CLASSNAME > TAG NAME */
+
+/* confusion */
+li{                                                             
+    background-color: yellow;
+}
+li .list-item {
+    background-color: aquamarine
+}
+
+/* PARENT (TAG || ATTRIBUTE) CHILDSELECTOR (TAG || ATTRIBUTE) */
+dl dd{
+    color: blue;
+    background-color: lightcoral;
+}
+
+/* SPECIFICITY */
+dl dd.second-dd{
+    color: yellow;
+    background-color: black;
+}
+
+/* SELECTOR( TAG || ATTRIBUTE) ~ (TILT sign) SIBLING SELECTOR(TAG || ATTRIBUTE ) */
+
+dd ~ dt {
+    background-color: blueviolet;
+}
+
+/* dl~ul {
+    box-shadow: 5px 5px 10px blue;
+}
+
+h3 ~ ol {
+    box-shadow: 10px 10px 10px teal;
+} */
+
+
+/* ADJACENT(+) */
+dd+dt {
+    background-color: fuchsia;
+}
+h2+h3{
+    background-color: orangered;
+}
+
+h1+p{
+    background-color: black;
+    color: brown; /*it wont work as in line no 14 we used CLASSNAME WHICH IS > TAGNAME THAT IS H1,P HERE*/
+}
+
+ 

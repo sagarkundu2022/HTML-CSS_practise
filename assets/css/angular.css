@@ -1,0 +1,72 @@
+table {
+    border: 3px solid black;
+}
+
+img {
+    width: 120px;
+    height: 100px;
+}
+
+th, td{
+    display: table-cell;
+    border: 3px solid black;
+}
+
+/* SPECIFICITY  */
+
+/* [NAME] ONLY TO SELECT ATTRIBUTE NOT VALUE */
+/* [ATTRIBUTE NAME = VALUE] TO SELECT ON THE BASIS OF EXACT ATTRIBUTE */
+/* [ATTRIBUTE NAME *= VALUE] TO SELECT JUST THE CONTAIN NOT the whole  */
+/* [ATTRIBUTE NAME ~= VALUE] TO SELECT SPACE SPECIFIED VALUE */
+/* [ATTRIBUTE NAME ^= VALUE] TO SELECT THE VALUE STARTS WITH  */
+/* [ATTRIBUTE NAME $= VALUE] TO SELECT THE VALUE ENDS WITH  */
+/* [ATTRIBUTE NAME |= VALUE] TO SELECT DASHED ATTRIBUTE  */
+
+ [data-column]  /*NOT BOTHERING WITH VALUE*/
+ {
+    background-color: aqua
+ }   
+
+ [data-column='table-data'] {
+    border: 3px solid red;
+}
+[data-column *='table-'] 
+{
+    box-shadow: 2px 2px 2px 2px greenyellow ;     
+}
+/* TOP-RIGHT-BOTTOM-LEFT */
+img[alt~="unsplash"] {
+    border: 20px solid darkslategray ;
+    /* vertical horzontal */
+}
+
+img[title^=Picture] {
+    border: 20px solid orangered;
+}
+img[alt$=unsplash] {
+    border: 20px solid orangered;
+}
+[data-column $="table-ta"] {
+    border: 20px solid yellow;
+}
+[data-column |='table'] {
+    text-decoration: line-through;
+}
+
+table {
+    display: inline-block;
+    width: 30%;
+    
+    margin: 10px 10px
+}
+
+table:nth-child(2) tr:last-child {
+background-color: darkgoldenrod;
+}
+
+tr th[data-column $= data]::before{
+    content: 'Full ';
+}
+
+
+
