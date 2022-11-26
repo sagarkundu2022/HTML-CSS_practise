@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+        }
+        @keyframes color-change {
+            0% {background-color: red;}
+            20% {background-color: green;}
+            40% {background-color: yellow;}
+            60% {background-color: indianred;}
+            80% {background-color: lawngreen;}
+            100% {background-color: navy;}
+        }
+        section{
+            animation-name: color-change;
+            animation-delay: 1s;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+        /* section:hover{
+            transform: rotate(30deg);
+            transition: 5s;
+        } */
+
+        /* section:hover{
+            transform: matrix(1.5, 2.5, 0.5, 2);
+        } */
+    </style>
+</head>
+<body>
+    <!-- <section>matrix</section> -->
+    <section>rotate</section>
+</body>
+</html>
